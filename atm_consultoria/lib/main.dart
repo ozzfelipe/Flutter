@@ -10,6 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/telaCliente' : (context) => telaCliente(),
+        '/telaServico' : (context) => telaServico(),
+        '/telaContato' : (context) => telaContato(),
+        '/telaEmpresa' : (context) => telaEmpresa(),
+      },
       title: 'ATM Consultoria',
       home: MyHomePage(title: 'ATM Consultoria'),
     );
@@ -45,14 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               GestureDetector(
-                onTap: _abrirEmpresa,
+                onTap: () => Navigator.pushNamed(context, '/telaEmpresa'),
                 child:
                 Padding(padding: EdgeInsets.only(top: 0),
                   child: Image.asset('images/menu_empresa.png'),
                 ),
               ),
               GestureDetector(
-                onTap: _abrirServico,
+                onTap: () => Navigator.pushNamed(context, '/telaServico'),
                 child: Padding(padding: EdgeInsets.only(top: 0),
                   child: Image.asset('images/menu_servico.png'),
                 ),
@@ -63,13 +70,13 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               GestureDetector(
-                onTap: _abrirCliente,
+                onTap: () => Navigator.pushNamed(context, '/telaCliente'),
                 child: Padding(padding: EdgeInsets.only(top: 30),
                   child: Image.asset('images/menu_cliente.png'),
                 ),
               ),
               GestureDetector(
-                  onTap: _abrirContato,
+                  onTap: () => Navigator.pushNamed(context, '/telaContato'),
                   child: Padding(padding: EdgeInsets.only(top: 30),
                     child: Image.asset('images/menu_contato.png'),
                   ) ,
