@@ -4,6 +4,13 @@ void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Alcool ou Gasolina',
       home: homeStateful(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.red,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
     ));
 
 class homeStateful extends StatefulWidget {
@@ -21,7 +28,6 @@ class _homeStatefulState extends State<homeStateful> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
           title: Text(_titulo),
         ),
         body: Container(
@@ -80,7 +86,7 @@ class _homeStatefulState extends State<homeStateful> {
                       child: Text(
                         _textResultado,
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+                            fontSize: 16, fontWeight: FontWeight.bold),
                       ))
                 ]),
           ),
@@ -113,7 +119,7 @@ class _homeStatefulState extends State<homeStateful> {
     _limparCampos();
   }
 
-  void _limparCampos(){
+  void _limparCampos() {
     _controllerGasolina.text = "";
     _controllerAlcool.text = "";
   }
