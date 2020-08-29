@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "41677393803",
+    "firebase_url": "https://whatzappclone-d7b69.firebaseio.com",
+    "project_id": "whatzappclone-d7b69",
+    "storage_bucket": "whatzappclone-d7b69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41677393803:android:982054f065d8da3eb8298e",
+        "android_client_info": {
+          "package_name": "com.felipesantos.whatzappflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41677393803-tmmadk4o5ammfo7sde90eiddjbc636vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANm3lyYPRQNZ0gFI8dx1S017pLMni5f-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41677393803-tmmadk4o5ammfo7sde90eiddjbc636vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
