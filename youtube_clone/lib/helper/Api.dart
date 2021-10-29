@@ -4,9 +4,9 @@ import 'dart:convert';
 
 import 'package:youtube_clone/model/Video.dart';
 
-const CHAVE_YOUTUBE_API = 'AIzaSyDbQLDoQFZvKLaimKEoiqzB1SM3VB4p4Qk';
-const ID_CANAL = 'UCVHFbqXqoYvEWM1Ddxl0QDg';
-const URL_BASE = 'https://www.googleapis.com/youtube/v3/';
+const CHAVE_YOUTUBE_API = '';
+const ID_CANAL = '';
+const URL_BASE = '';
 
 
 class Api {
